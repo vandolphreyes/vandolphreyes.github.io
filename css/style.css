@@ -33,6 +33,10 @@ footer, .sorry {
 	text-align: center;
 }
 
+.sorry {
+	margin: 10px;
+}
+
 .sorry a {
 	background: #f18282;
     padding: 5px;
