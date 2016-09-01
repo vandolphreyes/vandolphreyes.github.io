@@ -1,6 +1,6 @@
 $(function() {
 
-    $base_url                = 'http://www.outbounders.com/';
+    $base_url                = 'https://www.outbounders.com/';
     $chat_box                = $('#chat-view-box');
     $web_chat_url            = $base_url + 'web_chat/';
     $job_id                  = $chat_box.data('id');
