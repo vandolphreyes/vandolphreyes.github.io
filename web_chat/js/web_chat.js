@@ -1,6 +1,6 @@
 $(function() {
 
-    $base_url                = $('#base_url').html();
+    $base_url                = 'http://www.outbounders.com/';
     $chat_box                = $('#chat-view-box');
     $web_chat_url            = $base_url + 'web_chat/';
     $job_id                  = $chat_box.data('id');
@@ -22,8 +22,9 @@ $(function() {
     $key_up_timer            = '';
 
     // urls for web_chat
-    $V2_URL                  = $chat_box.data('v2-url'); // different usage from $base_url
+    $V2_URL                  = $base_url; // different usage from $base_url
     $EXPRESS_URL             = $chat_box.data('express-url');
+    alert($V2_URL);
 
     // checking base url
     if ($base_url == $EXPRESS_URL) {
