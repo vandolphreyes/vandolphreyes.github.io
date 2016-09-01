@@ -36,10 +36,20 @@ $(function(){
 
 	      success: function(data) {
 	        // Here's where you handle a successful response.
+			$('.output').css({
+				'border' : '1px solid green',
+				'padding' : '10px'
+			});
 	        $('.output').html(data);
 	      },
 
 	      error: function() {
+
+			$('.output').css({
+  				'border' : '1px solid red',
+  				'padding' : '10px'
+  			});
+  	        $('.output').html("No 'Access-Control-Allow-Origin' header is present on the requested resource. Please check console also.");
 	        // Here's where you handle an error response.
 	        // Note that if the error was due to a CORS issue,
 	        // this function will still fire, but there won't be any additional
@@ -50,7 +60,7 @@ $(function(){
 	});
 });
 //
-// // Create the XHR object.
+// Create the XHR object.
 // function createCORSRequest(method, url) {
 //     var xhr = new XMLHttpRequest();
 //     if ("withCredentials" in xhr) {
@@ -75,7 +85,7 @@ $(function(){
 // // Make the actual CORS request.
 // function makeCorsRequest() {
 //     // This is a sample server that supports CORS.
-//     var url = 'https://vandolphreyes29.github.io/';
+//     var url = 'http://www.outbounders.com/';
 //
 //     var xhr = createCORSRequest('GET', url);
 //     if (!xhr) {
@@ -87,13 +97,13 @@ $(function(){
 //     xhr.onload = function() {
 //         var text = xhr.responseText;
 //         var title = getTitle(text);
-//         var x = document.getElementsByClassName("display");
+//         var x = document.getElementsByClassName("output");
 //         x[0].innerHTML = 'Response from CORS request to ' + url + ': ' + title;
 //     };
 //
 //     xhr.onerror = function() {
 //         alert('Woops, there was an error making the request.');
-//         var x = document.getElementsByClassName("display");
+//         var x = document.getElementsByClassName("output");
 //         x[0].innerHTML = 'Woops, there was an error making the request.';
 //     };
 //
