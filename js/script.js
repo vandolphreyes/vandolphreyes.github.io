@@ -1,6 +1,6 @@
 $(function(){
 
-	$('.show-data').on('click', function(){
+	//$('.show-data').on('click', function(){
 
 	    $.ajax({
 
@@ -9,7 +9,8 @@ $(function(){
 	      type: 'GET',
 
 	      // The URL to make the request to.
-	      url: 'https://vandolphreyes29.github.io/',
+	      //url: 'https://vandolphreyes29.github.io/',
+		  url: 'http://jsbeautifier.org/',
 
 	      // The 'contentType' property sets the 'Content-Type' header.
 	      // The JQuery default for this property is
@@ -17,16 +18,17 @@ $(function(){
 	      // a preflight. If you set this value to anything other than
 	      // application/x-www-form-urlencoded, multipart/form-data, or text/plain,
 	      // you will trigger a preflight request.
-	      contentType: 'text/plain',
+	      //contentType: 'text/plain',
+		  dataType: 'html',
 
-	      xhrFields: {
-	        // The 'xhrFields' property sets additional fields on the XMLHttpRequest.
-	        // This can be used to set the 'withCredentials' property.
-	        // Set the value to 'true' if you'd like to pass cookies to the server.
-	        // If this is enabled, your server must respond with the header
-	        // 'Access-Control-Allow-Credentials: true'.
-	        withCredentials: false
-	      },
+	    //   xhrFields: {
+	    //     // The 'xhrFields' property sets additional fields on the XMLHttpRequest.
+	    //     // This can be used to set the 'withCredentials' property.
+	    //     // Set the value to 'true' if you'd like to pass cookies to the server.
+	    //     // If this is enabled, your server must respond with the header
+	    //     // 'Access-Control-Allow-Credentials: true'.
+	    //     withCredentials: false
+	    //   },
 
 	      headers: {
 	        // Set any custom headers here.
@@ -57,7 +59,7 @@ $(function(){
 	      }
 	    });
 
-	});
+	//});
 });
 //
 // Create the XHR object.
