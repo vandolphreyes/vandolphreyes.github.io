@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			$base_url = 'http://localhost/vandolphreyes29.github.io/cors/';
+			
+			$.ajax({
+				type:     'post',
+				url : 	  $base_url + 'fetchme.html',
+				dataType: 'html',
+				success: function(data){
+					$('.display-here').text(data);
+				}
+			});
+
+		});
+	</script>
+</head>
+<body>
+
+	<b>testing CORS</b>
+	<br>
+	<hr>
+	Display the fetch file below using ajax
+	<p class="display-here"></p>
+
+</body>
+</html>
