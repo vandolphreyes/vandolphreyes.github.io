@@ -119,7 +119,7 @@ $(function() {
                 default:                 $default,
                 sending_sms:             $sending_sms
             },
-            dataType: 'html',
+            dataType: 'jsonp',
             url: $web_chat_url + 'fetch_parent_messages/',
             cache: false,
             success: function(data){
