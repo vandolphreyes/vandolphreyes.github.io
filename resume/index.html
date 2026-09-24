@@ -15,6 +15,9 @@
     line-height: 1.5; font-size: 15px;
   }
   header { border-bottom: 3px solid var(--accent); padding-bottom: 16px; margin-bottom: 24px; }
+  header { display: flex; align-items: center; gap: 20px; }
+  header img { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+  header .header-text { flex: 1; }
   h1 { font-size: 28px; margin: 0 0 4px; }
   .title { font-size: 16px; color: var(--sub); font-weight: 600; margin: 0 0 10px; }
   .contact { font-size: 13.5px; color: var(--sub); }
@@ -37,12 +40,15 @@
 <body>
 
 <header>
-  <h1>Vandolph Capacio Reyes</h1>
-  <p class="title">Senior Technical Project Manager &amp; Full Stack Developer</p>
-  <p class="contact">
-    <a href="mailto:vandolphreyes29@gmail.com">vandolphreyes29@gmail.com</a> &middot;
-    <a href="https://vandolphreyes.github.io">vandolphreyes.github.io</a>
-  </p>
+  <img src="/assets/img/profile.jpg" alt="Vandolph Reyes">
+  <div class="header-text">
+    <h1>Vandolph Capacio Reyes</h1>
+    <p class="title">Senior Technical Project Manager &amp; Full Stack Developer</p>
+    <p class="contact">
+      <a href="mailto:vandolphreyes29@gmail.com">vandolphreyes29@gmail.com</a> &middot;
+      <a href="https://vandolphreyes.github.io">vandolphreyes.github.io</a>
+    </p>
+  </div>
 </header>
 
 <section>
